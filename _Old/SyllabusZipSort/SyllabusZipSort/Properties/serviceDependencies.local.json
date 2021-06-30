@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "storage1": {
+      "type": "storage.emulator",
+      "connectionId": "AzureWebJobsStorage"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup')]/providers/Microsoft.Sql/servers/syllabuszip/databases/SyllabusZip",
+      "type": "mssql.azure",
+      "connectionId": "sqldb_connection",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}

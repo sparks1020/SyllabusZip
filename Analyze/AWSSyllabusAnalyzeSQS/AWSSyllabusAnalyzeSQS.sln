@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSSyllabusAnalyzeSQS", "AWSSyllabusAnalyzeSQS\AWSSyllabusAnalyzeSQS.csproj", "{98F2B503-74CB-41A5-9FDC-E896B228175E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetDemoJson", "..\SyllabusZip.CV\GetDemoJson\GetDemoJson.csproj", "{C087D46A-BBFA-4ED6-A8BE-CBA66CE0F1EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98F2B503-74CB-41A5-9FDC-E896B228175E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F2B503-74CB-41A5-9FDC-E896B228175E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F2B503-74CB-41A5-9FDC-E896B228175E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F2B503-74CB-41A5-9FDC-E896B228175E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C087D46A-BBFA-4ED6-A8BE-CBA66CE0F1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C087D46A-BBFA-4ED6-A8BE-CBA66CE0F1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C087D46A-BBFA-4ED6-A8BE-CBA66CE0F1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C087D46A-BBFA-4ED6-A8BE-CBA66CE0F1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7A52C48-E66C-4106-B2DC-094971CA3A3A}
+	EndGlobalSection
+EndGlobal
