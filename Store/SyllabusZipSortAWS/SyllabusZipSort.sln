@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SyllabusZipSort", "SyllabusZipSort\SyllabusZipSort.csproj", "{9E9C8DDE-C487-49E0-8C83-3312445B99DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SyllabusZip", "..\SyllabusZip\SyllabusZip\SyllabusZip.csproj", "{8AD5FFED-47EA-4229-A8CC-00E2425AB274}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InitialSyllabusUpload", "..\InitialSyllabusUpload\InitialSyllabusUpload\InitialSyllabusUpload.csproj", "{E2A2A7B4-125D-4E6D-A334-82E32721F15E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSSyllabusAnalyzeSQS", "..\AWSSyllabusAnalyzeSQS\AWSSyllabusAnalyzeSQS\AWSSyllabusAnalyzeSQS.csproj", "{2CCAB1A8-5A16-4F6C-B7C1-2E26777590E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetDemoJson", "..\SyllabusZip.CV\GetDemoJson\GetDemoJson.csproj", "{B94AEAAA-F0F8-4D5A-9187-578E7349297C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E9C8DDE-C487-49E0-8C83-3312445B99DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9C8DDE-C487-49E0-8C83-3312445B99DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9C8DDE-C487-49E0-8C83-3312445B99DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9C8DDE-C487-49E0-8C83-3312445B99DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AD5FFED-47EA-4229-A8CC-00E2425AB274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AD5FFED-47EA-4229-A8CC-00E2425AB274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AD5FFED-47EA-4229-A8CC-00E2425AB274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AD5FFED-47EA-4229-A8CC-00E2425AB274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A2A7B4-125D-4E6D-A334-82E32721F15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A2A7B4-125D-4E6D-A334-82E32721F15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A2A7B4-125D-4E6D-A334-82E32721F15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A2A7B4-125D-4E6D-A334-82E32721F15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CCAB1A8-5A16-4F6C-B7C1-2E26777590E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CCAB1A8-5A16-4F6C-B7C1-2E26777590E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CCAB1A8-5A16-4F6C-B7C1-2E26777590E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CCAB1A8-5A16-4F6C-B7C1-2E26777590E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94AEAAA-F0F8-4D5A-9187-578E7349297C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94AEAAA-F0F8-4D5A-9187-578E7349297C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94AEAAA-F0F8-4D5A-9187-578E7349297C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94AEAAA-F0F8-4D5A-9187-578E7349297C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77394BC6-A4C1-4DFB-BA22-3CA908F1512E}
+	EndGlobalSection
+EndGlobal
