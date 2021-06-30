@@ -1,0 +1,39 @@
+﻿@model IList<SyllabusZip.Common.Data.Assignment>
+@{
+    ViewData["Title"] = "Assignments";
+}
+<h1>Assignments</h1>
+
+<div class="container">
+    <div class="row">
+        @{ 
+            DateTimeConvert newDateConvert = new DateTimeConvert(null);
+        }
+        @foreach (var item in Model.ToList().OrderBy(item => newDateConvert.stringtodate(item.Date)))
+        {
+
+            <div id="accordion" style="width: 100%;">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#@("s" + item.Id)" aria-expanded="false" aria-controls="collapseOne">
+                                @(item.Date): @item.Topic @(item.Chapter ?? item.Homework ?? item.Project)
+
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="@("s" + item.Id)" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@item.Date</li>
+                                @Html.ActionLink("Edit", "EditAssignments", "Editor", new { id = item.Id })
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

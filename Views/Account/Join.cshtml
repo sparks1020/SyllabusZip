@@ -1,0 +1,15 @@
+<h1>Select your plan</h1>
+<p>It looks like you need to pick a plan or renew your subscription before continuing:</p>
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="month" checked>
+    <label class="btn btn-outline-primary" for="btnradio1">Monthly Subscription</label>
+</div>
+<button id="checkout">Subscribe</button>
+
+
+@section Scripts {
+    <script>var PriceIdMonth = "@Environment.GetEnvironmentVariable("STRIPE_PRICE_ID")";</script>
+    <script>var stripePK = "@Environment.GetEnvironmentVariable("STRIPE_PUBLISHABLE_KEY")";</script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/js/stripe-script.js"></script>
+}

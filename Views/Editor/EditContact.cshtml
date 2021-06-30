@@ -1,0 +1,33 @@
+﻿@model EditContactViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @using (Html.BeginForm("EditContacts", "Editor", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+<div class="form-horizontal">
+    <hr />
+    <h4>Edit Assignment details</h4>
+    @Html.HiddenFor(model => model.ContactId)
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.ClassTitle, htmlAttributes: new { @class = "control-label col-md-2", @readonly = "readonly" })
+        <div class="col-md-10">
+            Teacher:   @Html.EditorFor(model => model.Teacher, new { htmlAttributes = new { @class = "form-control" } })
+            Class Time:  @Html.EditorFor(model => model.ClassTime, new { htmlAttributes = new { @class = "form-control" } })
+            Office:   @Html.EditorFor(model => model.Office, new { htmlAttributes = new { @class = "form-control" } })
+            Office Hours:   @Html.EditorFor(model => model.Office_Hours, new { htmlAttributes = new { @class = "form-control" } })
+            Email: @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            Phone Number: @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+            Mailbox: @Html.EditorFor(model => model.Mailbox, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+    }
+}

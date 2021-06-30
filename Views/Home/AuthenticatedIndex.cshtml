@@ -1,0 +1,74 @@
+﻿@model AuthenticatedIndexViewModel
+@{
+    ViewData["Title"] = "Assignments";
+    ViewData["Title"] = "Exams";
+}
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Features -->
+    <row>
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Link to your calendar from iOS, Android, Google Calendar, and more:</p>
+                        <div class="input-group copy-group">
+                            <input class="form-control copy-text" disabled
+                                value="https://@(Context.Request.Host)/Calendar/@(Context.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value)" />
+                            <div class="input-group-append">
+                                <span class="copy-icon input-group-text"><i class="bi bi-clipboard"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Upcoming Assignments</h4>
+                        @foreach (var item in Model.Assignment)
+                        {
+                            <p class="card-text">@item.Homework</p>
+                            <p class="card-text">@item.Chapter</p>
+                            <p class="card-text">@item.Project</p>
+                        }
+
+                    </div>
+                    <div class="card-footer">
+                        <a href="/Home/Calendar" class="btn btn-primary">Go to Calendar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Upcoming Exams</h4>
+                        @foreach (var item in Model.Exam)
+                        {
+                            <p class="card-text">@item.ExamType</p>
+                        }
+                    </div>
+                    <div class="card-footer">
+                        <a href="/Home/Calendar" class="btn btn-primary">Go to Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </row>
+</div>
+<!-- /.container -->
+
+<script>
+    document.querySelectorAll('.copy-text, .copy-icon').forEach(function (el) {
+        el.addEventListener('click', function () {
+            var textEl = el.closest(".copy-group").querySelector('.copy-text');
+            textEl.disabled = false;
+            textEl.select();
+            document.execCommand('copy');
+            textEl.disabled = true;
+        })
+    })
+</script>

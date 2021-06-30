@@ -1,0 +1,23 @@
+﻿@model SyllabusViewModel
+@{
+    ViewData["Title"] = "Syllabi";
+    ViewData["Title"] = "Contact";
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <form method="post">
+        @foreach (var item in Model.Syllabus)
+        {
+            <div class="checkbox">
+                <label>
+                    <input name="@("s" + item.Id)" type="checkbox" data-toggle="toggle" checked="@item.CourseStatus">
+                    @(item.ContactInfo?.ClassTitle ?? "Processing...")
+                </label>
+            </div>
+        }
+
+        <input class="btn btn-primary btn-md" type="submit" value="Save" />
+    </form>
+}
